@@ -1,0 +1,8 @@
+pe.ask.kafka.core.autoconfiguration
+pe.ask.kafka.core.consumer.dispatcher
+pe.ask.kafka.core.consumer.helper
+pe.ask.kafka.core.consumer.properties
+pe.ask.kafka.core.exceptions
+pe.ask.kafka.core.model
+pe.ask.kafka.core.producer.helper
+pe.ask.kafka.core.producer.properties
