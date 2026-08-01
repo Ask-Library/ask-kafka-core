@@ -1,0 +1,33 @@
+[versions]
+springBoot = "4.0.6"
+ask-core-v = "1.0.4"
+ask-exceptions-core-v = "1.0.3"
+freefair-lombok = "9.5.0"
+reactor-kafka-version = "1.3.25"
+
+[libraries]
+spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
+
+ask-core = { group = "com.github.Ask-Library", name = "ask-core", version.ref = "ask-core-v" }
+ask-exception-core = { group = "com.github.Ask-Library", name = "ask-exception-core", version.ref = "ask-exceptions-core-v" }
+
+project-reactor = { group = "io.projectreactor", name = "reactor-core" }
+
+reactor-kafka = { group = "io.projectreactor.kafka", name = "reactor-kafka", version.ref = "reactor-kafka-version" }
+
+jackson-core = { group = "tools.jackson.core", name = "jackson-core" }
+jackson-databind = { group = "tools.jackson.core", name = "jackson-databind" }
+
+spring-boot-autoconfigure = { group = "org.springframework.boot", name = "spring-boot-autoconfigure" }
+spring-boot-configuration-processor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor", version.ref = "springBoot" }
+spring-boot-autoconfigure-processor = { group = "org.springframework.boot", name = "spring-boot-autoconfigure-processor", version.ref = "springBoot" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+project-reactor-test = { group = "io.projectreactor", name = "reactor-test" }
+
+[plugins]
+java-library = { id = "java-library" }
+maven-publish = { id = "maven-publish" }
+jacoco = { id = "jacoco" }
+freefair-lombok = { id = "io.freefair.lombok", version.ref = "freefair-lombok" }
